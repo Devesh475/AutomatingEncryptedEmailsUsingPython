@@ -1,6 +1,7 @@
 import pyttsx3
 import smtplib
 import speech_recognition as sr
+from encryptMessage import encode_message
 from email.message import EmailMessage
 
 listner = sr.Recognizer()
@@ -39,7 +40,8 @@ def send_email(receiver,subject,body):
     email = EmailMessage()
     email['From'] = 'sender@gmail.com'
     email['To'] = receiver
-    email['Subject'] = subject
+    email['Subject'] = encode_message(subject)
+    body = encode_message(body)
     email.set_content(body)
     server.send_message(email)
 
