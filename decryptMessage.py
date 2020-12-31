@@ -1,0 +1,3 @@
+from decryption import decrypt_message
+
+print(decrypt_message(b'gAAAAABf7fzjKZItslv9Cwm6B7XaM-33dc4h9n9T58zLR-RL6f5PRbwS3ubW-u_mJPjqt84ab_N21OLHFzasMUseRIO1L0hFmEUEr0TXQcRFPeLbPoraghI='))

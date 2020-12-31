@@ -3,34 +3,19 @@ from cryptography.fernet import Fernet
 # encryption code
 # Get the key from the file
 file = open('key.txt', 'rb')
-keyforEncryption = file.read()
+key = file.read()
 file.close()
 
 
 # Encrypt the message
-def encode_message(message):
+def encrypt_message(message):
     encoded = message.encode()
-    f = Fernet(keyforEncryption)
+    f = Fernet(key)
     encrypted = f.encrypt(encoded)
     return encrypted
 
 
-# decryption code
-# Get the key from the file
-file = open('key.txt', 'rb')
-keyforDecryption = file.read()
-file.close()
-
-
-# Decrypt the message
-def decrypt_message(encrypted):
-    f2 = Fernet(keyforDecryption)
-    decrypted = f2.decrypt(encrypted)
-    message = decrypted.decode()
-    return message
-
-
 msg = 'this is my text message'
-cipher = encode_message(msg)
+cipher = encrypt_message(msg)
 print(cipher)
-print(decrypt_message(cipher))
+
