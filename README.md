@@ -15,15 +15,18 @@ Steps to use the scripts :
 
 * Run the script.
 
-### Packages required to run the script :
+## Dependencies :
 
 1. speech_recognition 
 2. pyttsx3 
 3. smtplib 
 4. cryptography
 
-### packages can be installed using pip install <package-name>
 
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the cryptography package
+```bash
+pip install cryptography
+```
 Encryption.py file is used to create your unique key using a password that is unique for that password.
 
 EncryptMessage.py is the file which has defined functions to encrypt and decrypt the string using the functions encrypt_message() and decrypt_message()
