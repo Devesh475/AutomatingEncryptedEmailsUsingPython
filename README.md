@@ -18,9 +18,9 @@ Run the script.
 Packages required to run the script :
 
 1. speech_recognition 
-2. 2. pyttsx3 
-3. 3. smtplib 
-4. 4. cryptography
+2. pyttsx3 
+3. smtplib 
+4. cryptography
 
 packages can be installed using pip install <package-name>
 
