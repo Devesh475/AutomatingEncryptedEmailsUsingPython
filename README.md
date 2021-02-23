@@ -5,24 +5,24 @@ Steps to use the scripts :
 
 **Download all scripts in same folder**
 
-Put your email in place of sender email.
+* Put your email in place of sender email.
 
-sendmails.py send the mails whose content has to be typed by the user
+* sendmails.py send the mails whose content has to be typed by the user
 
-main.py sends the mails through voice commands
+* main.py sends the mails through voice commands
 
 {For main.py you need to first set the contact dictionary to send the mails to the existing contacts}
 
-Run the script.
+* Run the script.
 
-Packages required to run the script :
+### Packages required to run the script :
 
 1. speech_recognition 
 2. pyttsx3 
 3. smtplib 
 4. cryptography
 
-packages can be installed using pip install <package-name>
+### packages can be installed using pip install <package-name>
 
 Encryption.py file is used to create your unique key using a password that is unique for that password.
 
